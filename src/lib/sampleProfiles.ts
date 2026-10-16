@@ -1,0 +1,107 @@
+import { ProfileAssessmentInput } from '../types';
+
+export interface SampleProfileItem {
+  id: 'student' | 'professional' | 'privacy_conscious';
+  name: string;
+  role: string;
+  avatarSeed: string;
+  tagline: string;
+  description: string;
+  data: ProfileAssessmentInput;
+}
+
+export const SAMPLE_PROFILES: SampleProfileItem[] = [
+  {
+    id: 'student',
+    name: 'Maya Patel',
+    role: 'Undergraduate Computer Science Student',
+    avatarSeed: 'maya_student',
+    tagline: 'Active campus contributor seeking summer cybersecurity internships',
+    description: 'Maya shares her university achievements, posts photos of completion certificates with visible serial numbers, tags her student club events, and keeps public social accounts to build professional visibility.',
+    data: {
+      profileName: 'Maya Patel (@mayacodes_26)',
+      profileVisibility: 'public',
+      revealsInstitution: true,
+      institutionName: 'State Tech University · Department of Computer Science',
+      revealsContactInfo: true,
+      contactDetailsVisible: ['Student Email', 'Discord Handle', 'LinkedIn URL'],
+      revealsLocationRoutine: true,
+      revealsBirthdateMilestones: true,
+      postsTravelRealtime: false,
+      sharesUnredactedScreenshots: true,
+      sharesCertsOrIDs: true,
+      postsFamilyColleagues: true,
+      reusesUsernames: true,
+      sharesProjectDetails: true,
+      reusesPasswords: 'some_secondary_sites',
+      mfaEnabled: 'some_accounts',
+      reviewsPrivacySettings: 'rarely',
+      acceptsUnknownRequests: 'frequently',
+      clicksUnexpectedLinks: 'sometimes',
+      sharesWithUnverifiedContacts: false,
+      sanitizedPostText: 'Excited to complete my Junior year at State Tech! Just finished our Distributed Systems project repo and passed the Cloud Security Associate exam (Cert ID: #CSA-98214-STU). Headed to the Austin CyberSec Summit next week—hit me up if you are hiring summer interns! 🚀',
+    },
+  },
+  {
+    id: 'professional',
+    name: 'David Vance',
+    role: 'Senior Product Director at Apex Financial Systems',
+    avatarSeed: 'david_pro',
+    tagline: 'High-visibility corporate executive with frequent business travel',
+    description: 'David shares frequent conference updates, posts airport boarding selfies on business trips, has his direct corporate mobile number and email in public bios, and reuses memorable password variations across vendor portals.',
+    data: {
+      profileName: 'David Vance (@david_vance_apex)',
+      profileVisibility: 'public',
+      revealsInstitution: true,
+      institutionName: 'Apex Financial Systems Inc. · Enterprise Payments Division',
+      revealsContactInfo: true,
+      contactDetailsVisible: ['Direct Mobile Phone', 'Work Corporate Email', 'Executive Bio URL'],
+      revealsLocationRoutine: true,
+      revealsBirthdateMilestones: true,
+      postsTravelRealtime: true,
+      sharesUnredactedScreenshots: false,
+      sharesCertsOrIDs: false,
+      postsFamilyColleagues: true,
+      reusesUsernames: false,
+      sharesProjectDetails: true,
+      reusesPasswords: 'frequently',
+      mfaEnabled: 'some_accounts',
+      reviewsPrivacySettings: 'never',
+      acceptsUnknownRequests: 'sometimes',
+      clicksUnexpectedLinks: 'rarely',
+      sharesWithUnverifiedContacts: false,
+      sanitizedPostText: 'Just boarded Flight UA 442 to Zurich for the Global Banking Tech Summit! Looking forward to meeting our banking partners and discussing our new Q3 merchant settlement infrastructure. Direct contact during travel: david.vance@apexfinancial.io or +1 (555) 234-8901.',
+    },
+  },
+  {
+    id: 'privacy_conscious',
+    name: 'Elena Rostova',
+    role: 'Systems Architect & Privacy Advocate',
+    avatarSeed: 'elena_safe',
+    tagline: 'Disciplined cyber hygiene with strict digital boundaries',
+    description: 'Elena maintains pseudonymous public handles, enforces private personal accounts, masks contact information using dedicated email relays, uses hardware security keys (FIDO2), and strictly adheres to delayed sharing habits.',
+    data: {
+      profileName: 'Elena R. (@e_rostova_arch)',
+      profileVisibility: 'private',
+      revealsInstitution: false,
+      institutionName: '',
+      revealsContactInfo: false,
+      contactDetailsVisible: [],
+      revealsLocationRoutine: false,
+      revealsBirthdateMilestones: false,
+      postsTravelRealtime: false,
+      sharesUnredactedScreenshots: false,
+      sharesCertsOrIDs: false,
+      postsFamilyColleagues: false,
+      reusesUsernames: false,
+      sharesProjectDetails: false,
+      reusesPasswords: 'never',
+      mfaEnabled: 'all_accounts',
+      reviewsPrivacySettings: 'regularly',
+      acceptsUnknownRequests: 'never',
+      clicksUnexpectedLinks: 'never',
+      sharesWithUnverifiedContacts: false,
+      sanitizedPostText: 'Published my latest open-source research paper on zero-knowledge attestation architectures. Feedback welcome via PGP-encrypted mail or GitHub discussions.',
+    },
+  },
+];

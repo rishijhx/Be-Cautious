@@ -1,0 +1,6 @@
+{
+  "name": "DigitalFootprint AI",
+  "description": "AI-Powered Digital Identity Exposure & Privacy Risk Analyzer for the UNPHISHABLE Social Engineering Awareness Challenge.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
